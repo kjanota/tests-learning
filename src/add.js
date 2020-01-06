@@ -1,10 +1,10 @@
 function add(...args) {
-    let result = 0;
     if (args.length === 0) {
         return null;
     }
-    args.forEach(arg => (result += arg));
-    return result;
+    return args.reduce((a, b) => {
+        return a + b;
+    }, 0);
 }
 
 module.exports = add;
