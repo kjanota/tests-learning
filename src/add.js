@@ -9,6 +9,9 @@ function add(...args) {
                 return a;
             }
         }
+        if (typeof b === "object") {
+            return a;
+        }
         return a + b;
     }, 0);
 }

@@ -22,4 +22,7 @@ describe("add", () => {
     it("with non-number letter", () => {
         expect(add(1, "a")).toBe(1);
     });
+    it("to 1 add empty object", () => {
+        expect(add(1, {})).toBe(1);
+    });
 });
