@@ -13,8 +13,8 @@ describe("add", () => {
         expect(add()).toBe(null);
     });
     it("with letter", () => {
-        expect(add(1, "1")).toBe("11");
-        expect(add("2", 1)).toBe("021");
+        expect(add(1, "1")).toBe(2);
+        expect(add("2", 1)).toBe(3);
     });
     it("one element", () => {
         expect(add(1)).toBe(1);
