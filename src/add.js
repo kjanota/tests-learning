@@ -4,9 +4,10 @@ function add(...args) {
     }
     return args.reduce((a, b) => {
         if (typeof b === "string") {
-            try {
-                b = parseInt(b, 10);
-            } catch (error) {}
+            b = parseInt(b, 10);
+            if (isNaN(b)) {
+                return a;
+            }
         }
         return a + b;
     }, 0);

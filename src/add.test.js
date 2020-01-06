@@ -19,4 +19,7 @@ describe("add", () => {
     it("one element", () => {
         expect(add(1)).toBe(1);
     });
+    it("with non-number letter", () => {
+        expect(add(1, "a")).toBe(1);
+    });
 });
